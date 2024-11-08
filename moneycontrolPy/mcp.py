@@ -53,7 +53,7 @@ class API:
         options.add_argument("--incognito")
         if self.BROWSER_VIEW is False:
             options.add_argument("--headless")
-        driver = webdriver.Chrome(WEB_DRIVER_PATH, options=options)
+        driver = webdriver.Chrome(executable_path=WEB_DRIVER_PATH, options=options)
 
         return driver
 
